@@ -19,7 +19,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-     - cron: '31 10 * * 2'
+     - cron: '0 0 * * 0'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -97,16 +97,3 @@ jobs:
         # Path to SARIF file relative to the root of the repository
         sarif_file: ${{ github.workspace }}/detekt.sarif.json
         checkout_path: ${{ github.workspace }}
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
